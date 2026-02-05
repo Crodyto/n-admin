@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Crodyto Admin – Launch Users</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #fff;
+      padding: 20px;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    button {
+      padding: 10px 14px;
+      border: none;
+      background: #38bdf8;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 6px;
+      margin-bottom: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #020617;
+    }
+
+    th, td {
+      border: 1px solid #1e293b;
+      padding: 10px;
+      text-align: left;
+      font-size: 14px;
+    }
+
+    th {
+      background: #020617;
+    }
+
+    tr:nth-child(even) {
+      background: #020617cc;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>📱 Crodyto Launch Users</h1>
+
+  <button onclick="downloadCSV()">⬇ Download CSV</button>
+
+  <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Mobile Number</th>
+        <th>Date</th>
+      </tr>
+    </thead>
+    <tbody id="tableBody">
+      <!-- data here -->
+    </tbody>
+  </table>
+
+  <!-- Firebase CDN (normal) -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
